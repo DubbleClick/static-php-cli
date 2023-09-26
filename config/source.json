@@ -153,14 +153,23 @@
             "path": "LICENSE"
         }
     },
-    "ldap": {
-        "type": "filelist",
-        "url": "https://www.openldap.org/software/download/OpenLDAP/openldap-release/",
-        "regex": "/href=\"(?<file>openldap-(?<version>[^\"]+)\\.tgz)\"/",
+    "imap": {
+        "type": "git",
+        "url": "https://github.com/uw-imap/imap.git",
+        "rev": "master",
         "license": {
             "type": "file",
             "path": "LICENSE"
         }
+    },
+    "ldap": {
+      "type": "filelist",
+      "url": "https://www.openldap.org/software/download/OpenLDAP/openldap-release/",
+      "regex": "/href=\"(?<file>openldap-(?<version>[^\"]+)\\.tgz)\"/",
+      "license": {
+        "type": "file",
+        "path": "LICENSE"
+      }
     },
     "libavif": {
         "type": "ghtar",
