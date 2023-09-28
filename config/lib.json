@@ -161,6 +161,9 @@
         "source": "libpam",
         "static-libs-unix": [
             "libpam.a"
+        ],
+        "lib-suggests": [
+            "openssl"
         ]
     },
     "libavif": {
